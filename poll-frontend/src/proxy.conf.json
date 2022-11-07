@@ -1,0 +1,10 @@
+{
+    "/pollApi": {
+        "target": "http://localhost:8080",
+        "secure": false
+    },
+    "/typeMusicApi": {
+        "target": "http://localhost:8081",
+        "secure": false
+    }
+}
