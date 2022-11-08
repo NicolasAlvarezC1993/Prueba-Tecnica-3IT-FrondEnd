@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PollAboutComponent } from './poll-about/poll-about.component';
-import { PollInputComponent } from './poll-input/poll-input.component'
-import { PollResultComponent } from './poll-result/poll-result.component';
-import { PollStartComponent } from './poll-start/poll-start.component';
+import { PollAboutComponent } from './components/poll-about/poll-about.component';
+import { PollInputComponent } from './components/poll-input/poll-input.component'
+import { PollResultComponent } from './components/poll-result/poll-result.component';
+import { PollStartComponent } from './components/poll-start/poll-start.component';
 
 const routes: Routes = [{ path: '',   redirectTo: '/inicio' , pathMatch: 'full'},
                         { path: 'inicio', component:  PollStartComponent},

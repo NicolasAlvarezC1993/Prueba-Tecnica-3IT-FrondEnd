@@ -9,14 +9,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PollInputComponent } from './poll-input/poll-input.component';
-import { PollResultComponent } from './poll-result/poll-result.component';
-import { PollAboutComponent } from './poll-about/poll-about.component';
+import { PollInputComponent } from './components/poll-input/poll-input.component';
+import { PollResultComponent } from './components/poll-result/poll-result.component';
+import { PollAboutComponent } from './components/poll-about/poll-about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PollStartComponent } from './poll-start/poll-start.component';
+import { PollStartComponent } from './components/poll-start/poll-start.component';
 import { PollService } from './services/poll.service';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { TypeMusicService } from './services/type-music.service';
 
 
 @NgModule({
@@ -41,7 +42,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
     MatFormFieldModule,
     MatIconModule
   ],
-  providers: [PollService],
+  providers: [PollService, TypeMusicService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
